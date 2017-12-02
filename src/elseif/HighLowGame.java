@@ -22,7 +22,7 @@ public class HighLowGame {
 				
 			
 			// 1. ask the user for a guess using a pop-up window, and save their response 
-			String guess = JOptionPane.showInputDialog("What do you think the next number will be?");
+			String guess = JOptionPane.showInputDialog("What do you think the number will be?");
 			// 4. convert the users’ answer to an int (Integer.parseInt(string))
 			int guess1 = Integer.parseInt(guess);
 			// 5. if the guess is correct

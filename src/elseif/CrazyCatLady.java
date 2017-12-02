@@ -19,17 +19,17 @@ public class CrazyCatLady {
 		}
 		// 4. If they have 3 or less, call the method below to show them a cat video
 		else if(cats1<=3) {
-		playVideo(videoURL);
+		playVideo("https://www.youtube.com/watch?v=XyNlqQId-nk");
 		}
 		// 5. If they say 0, show them a video of A Frog Sitting on a Bench Like a Human
 		else if(cats1==0) {
-		playVideo("https://www.youtube.com/watch?v=XyNlqQId-nk");
+		playVideo("https://youtu.be/ZJT9CeEhM10");
 		}
 	}
 
 	static void playVideo(String videoURL) {
 		try {
-			URI uri = new URI("https://www.youtube.com/watch?v=XyNlqQId-nk");
+			URI uri = new URI(videoURL);
 			java.awt.Desktop.getDesktop().browse(uri);
 		} catch (Exception e) {
 			e.printStackTrace();
